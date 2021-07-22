@@ -1,0 +1,1 @@
+Start the repro in one terminal, then call repro-client in another. Notice that the stats reporting never indicates backlog getting larger -- you can actually see backlog increase if you use a request pattern that doesn't eagerly load, but I don't see any place I can see the length of the queued requests that *aren't* in Reactor. 
